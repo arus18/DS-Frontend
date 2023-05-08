@@ -1,3 +1,5 @@
+import { BASE_URL } from './config.js';
+
 const form = document.getElementById('addItemForm');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -22,7 +24,7 @@ form.addEventListener('submit', function(event) {
     seller_id
   };
 
-  fetch('http://192.168.59.100:31781/items', {
+  fetch(`${BASE_URL}/items`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

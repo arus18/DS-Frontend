@@ -1,3 +1,5 @@
+import { BASE_URL } from './config.js';
+
 window.onload = function() {
   // Get the item ID from the URL query string
   const urlParams = new URLSearchParams(window.location.search);
@@ -9,7 +11,7 @@ window.onload = function() {
   const priceEl = document.getElementById('item-price');
 
   // Fetch the item details using the API endpoint
-  fetch(`http://192.168.59.100:31781/items/${itemId}`)
+  fetch(`${BASE_URL}/items/${itemId}`)
     .then(response => response.json())
     .then(itemDetails => {
       // Set the text content of the elements with the item details
