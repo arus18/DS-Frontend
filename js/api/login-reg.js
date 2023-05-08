@@ -1,4 +1,3 @@
-import { BASE_URL } from './config.js';
 
 const signupForm = document.querySelector('#signup form');
 const signupTabLink = document.querySelector('.tab a[href="#login"]');
@@ -34,7 +33,7 @@ loginForm.addEventListener('submit', async (e) => {
   const password = loginForm.querySelector('input[type="password"]').value;
 
   try {
-    const response = await fetch('http://192.168.49.2:30833/auth/login', {
+    const response = await fetch(`${BASE_URL}/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

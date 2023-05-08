@@ -1,4 +1,3 @@
-import { BASE_URL } from './config.js';
 const categoryList = document.getElementById('categoryList');
 
 window.onload = function () {

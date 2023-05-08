@@ -1,4 +1,3 @@
-import { BASE_URL } from './config.js';
 
 window.onload = function() {
   // Get the item ID from the URL query string

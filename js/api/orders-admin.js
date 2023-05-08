@@ -1,6 +1,6 @@
 // Fetch orders and fill the table
 function fetchOrders() {
-  fetch('http://example.com/api/orders')
+  fetch(`${BASE_URL}/orders/orders`)
     .then(response => response.json())
     .then(orders => {
       const orderList = document.getElementById('orderList');

@@ -1,4 +1,3 @@
-import { BASE_URL } from './config.js';
 
 const form = document.getElementById('addItemForm');
 form.addEventListener('submit', function(event) {
