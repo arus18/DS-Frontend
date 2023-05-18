@@ -22,3 +22,10 @@ window.onload = function() {
       console.error('Error fetching item details:', error);
     });
 };
+
+function addToCart() {
+  // Add item ID to the URL path and navigate to checkout.html
+  const urlParams = new URLSearchParams(window.location.search);
+  const itemId = urlParams.get('id');
+  window.location.href = `checkout.html?item_id=${itemId}`;
+}

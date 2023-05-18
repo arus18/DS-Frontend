@@ -10,13 +10,14 @@ window.onload = function () {
 
       // Iterate over the list of items and create a new div for each item
       items.forEach(item => {
+        console.log(item.image_urls[0]);
         // Create a new div element for the item
         const itemDiv = document.createElement('div');
         itemDiv.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'mix', 'vegetables', 'fastfood');
 
         // Set the HTML content of the item div using the template you provided
         itemDiv.innerHTML = `<div class="featured__item">
-          <div class="featured__item__pic set-bg" data-setbg="${item.imageUrl}">
+          <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
             <ul class="featured__item__pic__hover">
               <li><a href="#"><i class="fa fa-heart"></i></a></li>
               <li><a href="#"><i class="fa fa-retweet"></i></a></li>

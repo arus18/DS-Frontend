@@ -20,7 +20,7 @@ window.onload = function() {
         <td>${item.quantity}</td>
         <td>${item.category}</td>
         <td>
-          <button onclick="deleteItem(${item.id})">Delete</button>
+          <button onclick="deleteItem('${item._id}')">Delete</button>
         </td>
         <td>
           <button onclick="showEditModal('${item._id}')">Update</button>
